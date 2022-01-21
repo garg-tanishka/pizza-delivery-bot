@@ -1,0 +1,34 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - order
+  - order_pizza
+
+responses:
+  utter_greet:
+  - text: "Hey! How may I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot"
+
+  utter_order:
+  - text: "Thankyou for your order. Would you like to order anything else?"
+
+  utter_deny:
+  - text: "Thankyou for ordering."
+
+  utter_order_pizza:
+  - text: "What would you like to order?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
